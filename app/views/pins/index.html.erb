@@ -1,4 +1,4 @@
-<% if !user_signed_in? %>
+<% if user_signed_in? %>
 <p>Why hello, <%= current_user.email %></p>
 <% end %>
 
@@ -38,4 +38,5 @@
 
 <br>
 
-<%= link_to 'New Pin', new_pin_path %>
+<%= link_to 'New Pin', new_pin_path,  %>
+
